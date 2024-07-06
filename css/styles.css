@@ -225,8 +225,12 @@ img {
     border-radius: 0 0 4px 4px;
 }
 
+.content-team {
+    padding: 32px 0;
+}
+
 .team-subtitle {
-    margin-top: 32px;
+    text-align: center;
     margin-bottom: 8px;
         font-weight: 500;
         font-size: 20px;
@@ -237,7 +241,7 @@ img {
 }
 
 .team-text {
-    margin-bottom: 32px;
+    text-align: center;
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -272,7 +276,9 @@ img {
 }
 
 .content-portfolio {
-    padding: 32px 0 32px 16px;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-subtitle {
