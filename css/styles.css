@@ -22,6 +22,20 @@ img {
     display: block;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /*common*/
 
 .container {
@@ -112,16 +126,17 @@ img {
 
 .hero {
     background-color: #2e2f42;
-}
-
-.hero-container{
     padding: 188px 0;
 }
+
+/*.hero-container{
+    padding: 188px 0;
+}*/
 
 .hero-title {
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
     max-width: 496px;
     font-weight: 700;
         font-size: 56px;
@@ -154,13 +169,22 @@ img {
     background-color: #404bbf;
 }
 
-.features {}
+.features {
+    padding: 120px 0;
+}
 
-.features-list {}
+.features-list {
+    display: flex;
+    gap: 24px;
+    
+}
 
-.features-item {}
+.features-item {
+    flex-basis: calc((100% - 72px) / 4);
+}
 
 .features-subtitle {
+    margin-bottom: 8px;
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
